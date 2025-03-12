@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 API_URL = "https://api.coingecko.com/api/v3/coins/markets"
-PARAMS = {"vs_currency": "usd", "order": "market_cap_desc", "per_page": 5, "page": 1}
+PARAMS = {"vs_currency": "usd", "order": "market_cap_desc", "per_page": 50, "page": 1}
 
 def fetch_crypto_data():
     response = requests.get(API_URL, params=PARAMS)
